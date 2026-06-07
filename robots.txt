@@ -1,0 +1,8 @@
+User-Agent: *
+Allow: /
+Disallow: /api/
+Disallow: /private/
+Disallow: /investors
+Disallow: /investors/
+
+Sitemap: https://vinpatel.github.io/trinetram-web-deploy/sitemap.xml

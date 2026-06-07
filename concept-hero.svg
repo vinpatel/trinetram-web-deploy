@@ -1,0 +1,214 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1920 1080" role="img" aria-label="TriNetram concept hero — side-profile blueprint of smart glasses with subsystem callouts">
+  <title>TriNetram concept hero — side profile</title>
+  <desc>Blueprint-style side-profile silhouette of the TriNetram smart glasses. Ink (#0A0A0A) line work on paper (#FAFAFA), single --lens (#0066FF) accent on the NPU compartment annotation. No gradients, no shadows. Per DESIGN.md §8 and BRD-06 concept-labeling discipline.</desc>
+
+  <!-- paper -->
+  <rect width="1920" height="1080" fill="#FAFAFA"/>
+
+  <defs>
+    <marker id="leader-dot" viewBox="0 0 6 6" refX="3" refY="3" markerWidth="6" markerHeight="6">
+      <circle cx="3" cy="3" r="2" fill="#0A0A0A"/>
+    </marker>
+    <marker id="leader-dot-lens" viewBox="0 0 6 6" refX="3" refY="3" markerWidth="6" markerHeight="6">
+      <circle cx="3" cy="3" r="2" fill="#0066FF"/>
+    </marker>
+  </defs>
+
+  <!-- ────────────────────────────────────────────────────────────── -->
+  <!-- header strip -->
+  <!-- ────────────────────────────────────────────────────────────── -->
+  <text x="60" y="60" font-family="'JetBrains Mono','SF Mono',Menlo,monospace" font-size="14" fill="#0A0A0A" letter-spacing="1.2">CONCEPT RENDER — TriNetram · Side Profile</text>
+  <text x="60" y="82" font-family="'JetBrains Mono','SF Mono',Menlo,monospace" font-size="10" fill="#6B6B6B" letter-spacing="0.8">Engineering reference · wayfarer geometry · slightly chunky temple to house NPU + battery</text>
+  <line x1="60" y1="96" x2="1860" y2="96" stroke="#B5B5B5" stroke-width="0.5"/>
+
+  <!-- ────────────────────────────────────────────────────────────── -->
+  <!-- LIGHT GRID (subtle blueprint feel) -->
+  <!-- ────────────────────────────────────────────────────────────── -->
+  <g stroke="#E5E5E5" stroke-width="0.5" fill="none">
+    <line x1="60" y1="540" x2="1860" y2="540"/>
+    <line x1="960" y1="120" x2="960" y2="1000"/>
+  </g>
+
+  <!-- ────────────────────────────────────────────────────────────── -->
+  <!-- GLASSES SIDE-PROFILE SILHOUETTE -->
+  <!-- Composition: viewer is looking at the LEFT side of the glasses.
+       Lens & frame are on the LEFT; temple extends to the RIGHT toward the ear.
+       Origin (lens centre): approx (640, 540). -->
+  <!-- ────────────────────────────────────────────────────────────── -->
+
+  <g stroke="#0A0A0A" stroke-width="1.5" fill="none" stroke-linecap="round" stroke-linejoin="round">
+
+    <!-- ── LENS HOUSING (outer frame ring) ─────────────────────── -->
+    <!-- wayfarer-style: slightly trapezoidal, taller on the nose-bridge side -->
+    <path d="
+      M 460 440
+      Q 460 420 488 412
+      L 800 408
+      Q 832 410 836 432
+      L 836 632
+      Q 832 656 798 660
+      L 510 666
+      Q 472 666 460 644
+      Z
+    "/>
+
+    <!-- inner lens edge (offset 8px inboard, shows frame thickness) -->
+    <path d="
+      M 474 446
+      Q 476 432 496 426
+      L 798 422
+      Q 820 424 822 442
+      L 822 626
+      Q 820 644 794 648
+      L 514 652
+      Q 484 652 474 634
+      Z
+    "/>
+
+    <!-- variable-focus element hint: subtle concentric arc inside the lens -->
+    <g stroke="#0A0A0A" stroke-width="1" stroke-dasharray="2 3" opacity="0.55">
+      <ellipse cx="648" cy="538" rx="150" ry="100"/>
+      <ellipse cx="648" cy="538" rx="100" ry="68"/>
+      <ellipse cx="648" cy="538" rx="50" ry="34"/>
+    </g>
+
+    <!-- ── NOSE BRIDGE (small jog to the left of the lens) ──── -->
+    <path d="
+      M 460 472
+      L 432 478
+      Q 416 482 416 498
+      L 416 528
+      Q 416 540 432 544
+      L 460 550
+    "/>
+
+    <!-- nose pad -->
+    <path d="
+      M 416 510
+      Q 402 510 398 520
+      Q 396 530 408 538
+      L 416 538
+      Z
+    "/>
+
+    <!-- ── HINGE BLOCK (right edge of lens, where temple meets frame) ──── -->
+    <rect x="836" y="492" width="34" height="78" rx="3" ry="3"/>
+    <!-- hinge pin (small circle) -->
+    <circle cx="853" cy="531" r="3"/>
+
+    <!-- ── TEMPLE ARM (extending to the right, slightly chunkier mid-section
+         to house the NPU; tapering to ear tip) ─────────────── -->
+    <path d="
+      M 870 498
+      L 1080 500
+      Q 1180 502 1260 514
+      L 1420 540
+      Q 1480 552 1500 568
+      L 1500 596
+      Q 1480 612 1420 624
+      L 1260 650
+      Q 1180 662 1080 664
+      L 870 566
+      Z
+    "/>
+
+    <!-- temple inner detail: NPU compartment outline (centred ~1180,580) -->
+    <rect x="1080" y="544" width="220" height="78" rx="4" ry="4"/>
+    <!-- NPU "chip" hint -->
+    <rect x="1130" y="568" width="60" height="30" rx="1" ry="1"/>
+    <line x1="1130" y1="576" x2="1120" y2="576"/>
+    <line x1="1130" y1="586" x2="1120" y2="586"/>
+    <line x1="1190" y1="576" x2="1200" y2="576"/>
+    <line x1="1190" y1="586" x2="1200" y2="586"/>
+
+    <!-- ── BATTERY COMPARTMENT (temple-tip, far right) ────────── -->
+    <rect x="1340" y="558" width="140" height="56" rx="2" ry="2"/>
+    <!-- cell-stack hint -->
+    <line x1="1370" y1="572" x2="1370" y2="600"/>
+    <line x1="1400" y1="572" x2="1400" y2="600"/>
+    <line x1="1430" y1="572" x2="1430" y2="600"/>
+    <line x1="1460" y1="572" x2="1460" y2="600"/>
+
+    <!-- ── USB-C PORT (on the underside of the temple, just past hinge) ─ -->
+    <rect x="930" y="568" width="24" height="8" rx="1.5" ry="1.5"/>
+    <line x1="934" y1="572" x2="950" y2="572"/>
+
+    <!-- ── DUAL CAMERA AREA (on the outboard face of the frame, top-right
+         of the lens) — two small circles ─────────────────────── -->
+    <circle cx="780" cy="430" r="9"/>
+    <circle cx="780" cy="430" r="3.5"/>
+    <circle cx="816" cy="438" r="7"/>
+    <circle cx="816" cy="438" r="2.5"/>
+
+    <!-- ── IR / SWIR APERTURE (just below dual cameras, on the bridge side) -->
+    <circle cx="746" cy="438" r="6"/>
+    <circle cx="746" cy="438" r="2"/>
+
+    <!-- ── AMBIENT LIGHT / UV SENSOR (small pinhole on the brow) ────── -->
+    <circle cx="648" cy="412" r="2.5"/>
+
+  </g>
+
+  <!-- ────────────────────────────────────────────────────────────── -->
+  <!-- ANNOTATIONS — leader lines + labels -->
+  <!-- ────────────────────────────────────────────────────────────── -->
+
+  <!-- 1. Lens housing (above lens) -->
+  <g stroke="#0A0A0A" stroke-width="1" fill="none">
+    <polyline points="488,412 488,260 220,260" marker-start="url(#leader-dot)"/>
+  </g>
+  <text x="220" y="244" font-family="'JetBrains Mono','SF Mono',Menlo,monospace" font-size="12" fill="#0A0A0A" letter-spacing="0.6">01 · LENS HOUSING</text>
+  <text x="220" y="262" font-family="'JetBrains Mono','SF Mono',Menlo,monospace" font-size="10" fill="#6B6B6B">variable-focus element + Rx carrier</text>
+
+  <!-- 2. Dual-camera area -->
+  <g stroke="#0A0A0A" stroke-width="1" fill="none">
+    <polyline points="800,430 880,330 1140,330" marker-start="url(#leader-dot)"/>
+  </g>
+  <text x="1140" y="316" font-family="'JetBrains Mono','SF Mono',Menlo,monospace" font-size="12" fill="#0A0A0A" letter-spacing="0.6">02 · DUAL CAMERAS</text>
+  <text x="1140" y="334" font-family="'JetBrains Mono','SF Mono',Menlo,monospace" font-size="10" fill="#6B6B6B">pupil + accommodation trackers · +  IR aperture</text>
+
+  <!-- 3. NPU compartment (lens-accent, the hero of the device) -->
+  <g stroke="#0066FF" stroke-width="1" fill="none">
+    <polyline points="1180,544 1180,420 1480,420" marker-start="url(#leader-dot-lens)"/>
+  </g>
+  <text x="1480" y="406" font-family="'JetBrains Mono','SF Mono',Menlo,monospace" font-size="12" fill="#0066FF" letter-spacing="0.6">03 · AI COMPUTE COMPARTMENT</text>
+  <text x="1480" y="424" font-family="'JetBrains Mono','SF Mono',Menlo,monospace" font-size="10" fill="#0066FF">NPU + MCU · the brain of the device</text>
+
+  <!-- 4. Battery in temple-tip -->
+  <g stroke="#0A0A0A" stroke-width="1" fill="none">
+    <polyline points="1410,614 1410,740 1700,740" marker-start="url(#leader-dot)"/>
+  </g>
+  <text x="1700" y="726" font-family="'JetBrains Mono','SF Mono',Menlo,monospace" font-size="12" fill="#0A0A0A" letter-spacing="0.6">04 · BATTERY</text>
+  <text x="1700" y="744" font-family="'JetBrains Mono','SF Mono',Menlo,monospace" font-size="10" fill="#6B6B6B">Li-Po · ~1200 mWh split-cell</text>
+
+  <!-- 5. USB-C port -->
+  <g stroke="#0A0A0A" stroke-width="1" fill="none">
+    <polyline points="942,576 942,820 700,820" marker-start="url(#leader-dot)"/>
+  </g>
+  <text x="700" y="806" text-anchor="end" font-family="'JetBrains Mono','SF Mono',Menlo,monospace" font-size="12" fill="#0A0A0A" letter-spacing="0.6">05 · USB-C PORT</text>
+  <text x="700" y="824" text-anchor="end" font-family="'JetBrains Mono','SF Mono',Menlo,monospace" font-size="10" fill="#6B6B6B">5 W charge · OTA fallback</text>
+
+  <!-- 6. Nose bridge / ambient sensor -->
+  <g stroke="#0A0A0A" stroke-width="1" fill="none">
+    <polyline points="416,520 280,520 280,400" marker-start="url(#leader-dot)"/>
+  </g>
+  <text x="160" y="384" font-family="'JetBrains Mono','SF Mono',Menlo,monospace" font-size="12" fill="#0A0A0A" letter-spacing="0.6">06 · NOSE BRIDGE</text>
+  <text x="160" y="402" font-family="'JetBrains Mono','SF Mono',Menlo,monospace" font-size="10" fill="#6B6B6B">silicone pad · ambient/UV pinhole</text>
+
+  <!-- ────────────────────────────────────────────────────────────── -->
+  <!-- DIMENSION / SCALE BAR (lower-left, blueprint-style) -->
+  <!-- ────────────────────────────────────────────────────────────── -->
+  <g stroke="#0A0A0A" stroke-width="1" fill="none">
+    <line x1="460" y1="940" x2="1500" y2="940"/>
+    <line x1="460" y1="932" x2="460" y2="948"/>
+    <line x1="1500" y1="932" x2="1500" y2="948"/>
+  </g>
+  <text x="980" y="930" text-anchor="middle" font-family="'JetBrains Mono','SF Mono',Menlo,monospace" font-size="10" fill="#6B6B6B" letter-spacing="0.6">target total length · ~148 mm (envelope, not measured)</text>
+
+  <!-- ────────────────────────────────────────────────────────────── -->
+  <!-- BOTTOM CAPTION — concept-render labeling discipline (BRD-06) -->
+  <!-- ────────────────────────────────────────────────────────────── -->
+  <line x1="60" y1="1010" x2="1860" y2="1010" stroke="#B5B5B5" stroke-width="0.5"/>
+  <text x="60" y="1040" font-family="'JetBrains Mono','SF Mono',Menlo,monospace" font-size="11" fill="#0A0A0A" letter-spacing="0.6">Concept render — engineering reference. Final form factor subject to subsystem selection.  2026-05</text>
+  <text x="1860" y="1040" text-anchor="end" font-family="'JetBrains Mono','SF Mono',Menlo,monospace" font-size="10" fill="#6B6B6B" letter-spacing="0.6">BRD-06 · sheet 01 of 02</text>
+</svg>
